@@ -18,7 +18,7 @@ type Todo struct {
 
 type Task []Todo
 
-func (td *Task) add(title string) { //td is reference to actual value of task.
+func (td *Task) add(title string) { //td is reference to the actual value of task.
 	*td = append(*td, Todo{
 		Tobedone:  title,
 		Completed: false,
